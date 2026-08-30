@@ -25,7 +25,7 @@
             <a href="#how" class="hover:text-white transition">Как работает</a>
             <a href="#pricing" class="hover:text-white transition">Тарифы</a>
         </div>
-        <a href="https://web-production-3e349.up.railway.app" class="gradient-bg px-5 py-2 rounded-full font-medium hover:opacity-90 transition">Попробовать бесплатно</a>
+        <a href="#free-form" class="gradient-bg px-5 py-2 rounded-full font-medium hover:opacity-90 transition">Попробовать бесплатно</a>
     </nav>
 
     <section class="text-center px-6 pt-16 pb-20 max-w-4xl mx-auto">
@@ -40,7 +40,7 @@
         </p>
         <p class="text-gray-500 mb-10">Без съёмки. Без монтажа. Без озвучки.</p>
 
-        <form action="https://tally.so/r/ZjreAo" method="GET" class="max-w-md mx-auto flex flex-col sm:flex-row gap-3 mb-4">
+        <form id="free-form" action="https://web-production-3e349.up.railway.app/collect-email" method="GET" class="max-w-md mx-auto flex flex-col sm:flex-row gap-3 mb-4">
             <input type="email" name="email" placeholder="your@email.com" required
                 class="flex-1 px-5 py-4 rounded-xl bg-gray-900 border border-gray-800 text-white placeholder-gray-500 focus:outline-none focus:border-purple-500 transition">
             <button type="submit" class="gradient-bg px-8 py-4 rounded-xl font-bold text-lg hover:opacity-90 transition whitespace-nowrap">
@@ -150,7 +150,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector('form[action*="tally.so"]');
+    const form = document.querySelector('form[action*="collect-email"]');
     if (!form) return;
 
     const email = form.querySelector('input[type="email"]');
