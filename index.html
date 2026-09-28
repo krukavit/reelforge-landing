@@ -1,6 +1,6 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ReelForge AI — Создание Reels с помощью ИИ</title><meta name="description" content="ReelForge AI — создание коротких вертикальных видео с помощью ИИ."><script src="https://cdn.tailwindcss.com"></script><style>body{font-family:Inter,system-ui,sans-serif}.gradient{background:linear-gradient(135deg,#a855f7,#ec4899)}.gradient-text{background:linear-gradient(135deg,#c084fc,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}</style></head><body class="bg-gray-950 text-white">
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KrukStudio AI — Создание Reels с помощью ИИ</title><meta name="description" content="KrukStudio AI — создание коротких вертикальных видео с помощью ИИ."><script src="https://cdn.tailwindcss.com"></script><style>body{font-family:Inter,system-ui,sans-serif}.gradient{background:linear-gradient(135deg,#a855f7,#ec4899)}.gradient-text{background:linear-gradient(135deg,#c084fc,#f472b6);-webkit-background-clip:text;background-clip:text;color:transparent}</style></head><body class="bg-gray-950 text-white">
 <nav class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-<a href="/" class="text-2xl font-extrabold gradient-text">ReelForge AI</a>
+<a href="/" class="text-2xl font-extrabold gradient-text">KrukStudio AI</a>
 <a href="https://web-production-3e349.up.railway.app/create" class="gradient px-5 py-2.5 rounded-full font-bold">Создать Reels</a>
 </nav>
 
@@ -9,15 +9,29 @@
 <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mt-7">Из идеи в готовый <span class="gradient-text">Reels</span></h1>
 <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mt-7">Создавай короткие вертикальные видео с помощью ИИ — без сложного монтажа.</p>
 <p class="text-gray-500 max-w-2xl mx-auto mt-4">Идея, скриншоты или уже снятое видео — выбирай исходник и запускай создание.</p>
-<div class="mt-9 flex flex-col sm:flex-row gap-3 justify-center">
-<a href="https://web-production-3e349.up.railway.app/create" class="gradient px-8 py-4 rounded-xl font-bold text-lg">Создать Reels →</a>
-<a href="#examples" class="px-8 py-4 rounded-xl border border-gray-700 font-semibold">Посмотреть примеры</a>
+<form action="https://web-production-3e349.up.railway.app/create" method="get" class="mt-9 max-w-2xl mx-auto">
+<div class="flex flex-col sm:flex-row gap-3">
+<input
+  name="website_url"
+  type="url"
+  required
+  placeholder="https://www.example.com"
+  autocomplete="url"
+  class="flex-1 px-5 py-4 rounded-xl bg-gray-900 border border-gray-700 text-white placeholder-gray-500 outline-none focus:border-purple-500"
+>
+<button type="submit" class="gradient px-8 py-4 rounded-xl font-bold text-lg">Начать с сайта →</button>
+</div>
+<p class="text-gray-600 text-sm mt-3">Вставь ссылку на свой сайт или страницу для создания Reels.</p>
+</form>
+
+<div class="mt-4">
+<a href="#examples" class="inline-block px-8 py-4 rounded-xl border border-gray-700 font-semibold">Посмотреть примеры</a>
 </div>
 </section>
 <section id="examples" class="max-w-6xl mx-auto px-6 py-16">
 <div class="text-center mb-10">
 <h2 class="text-3xl md:text-4xl font-bold">Реальные примеры</h2>
-<p class="text-gray-400 mt-3">Видео, подготовленные с помощью ReelForge AI</p>
+<p class="text-gray-400 mt-3">Видео, подготовленные с помощью KrukStudio AI</p>
 </div>
 
 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -102,7 +116,7 @@
 </section>
 
 <footer class="border-t border-gray-800 px-6 py-8 text-center text-gray-600 text-sm">
-© 2026 ReelForge AI
+© 2026 KrukStudio AI
 </footer>
 
 </body>
